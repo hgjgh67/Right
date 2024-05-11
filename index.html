@@ -23,10 +23,23 @@
     </style>
   </head>
 <body bgcolor="#FFFACD">
-<table>
-<tr><th>текст заголовка</th><th>текст заголовка</th></tr> <!--ряд с ячейками заголовков-->
-<tr><td>данные</td><td>данные</td></tr> <!--ряд с ячейками тела таблицы-->
-</table>
+table {
+   border: 1px solid grey;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+   border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+   border: 1px solid grey;
+	table {
+   width: 100%;
+}
+/* задаст фиксированную ширину для таблицы */
+table {
+   width: 600px;
+}
       <form action="index.html" method="post">
           <input type="text" id="name" name="student_name">
           <input type="email" id="mail" name="student_email">
